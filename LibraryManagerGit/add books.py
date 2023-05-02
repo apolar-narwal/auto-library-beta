@@ -7,7 +7,7 @@ book_index_file = "book_index.txt"
 book_availability_file = "book_availability.txt"
 book_list_file = "book_list_pretty.txt"
 
-# check if book codes file exists, create it if not
+# check if book codes file exists - create if it deosnt
 if not os.path.exists(book_codes_file):
     with open(book_codes_file, 'w') as f:
         f.write("0")
@@ -38,7 +38,7 @@ author = input("Enter the author of the book: ")
 with open(book_index_file, 'a') as f:
     f.write(f"{new_code},{title}\n")
 
-# add book to pretty list file with assigned code
+# add book to pretty list with assigned code
 with open(book_list_file, 'a') as f:
     f.write(f"Code: {new_code} | Title: {title} | Author: {author} | ISBN: {isbn}\n")
 
