@@ -1,0 +1,3 @@
+Code: 90384 | Title: title1 | Author: author1 | ISBN: 1
+Code: 90742 | Title: title2 | Author: author2 | ISBN: 2
+Code: 92790 | Title: title3 | Author: author3 | ISBN: 3
