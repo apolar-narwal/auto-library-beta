@@ -40,36 +40,26 @@ def lend_book():
     book_index = {}
     with open('book_index.txt', 'r') as f:
         for line in f:
-            code, title = line.strip().split(',')
-            book_index[code] = title
+            code_, title = line.strip().split(',')
+            book_index[code_] = title
 
     # get the book title from the index file
     if code not in book_index:
         messagebox.showerror("Error", "Invalid Code")
         return
     book_title = book_index[code]
-
-    # check if the person has already borrowed three books
-    lending_count = 0
-    with open('lending.txt', 'r') as f:
-        for line in f:
-            fields = line.strip().split(',')
-            if len(fields) > 1 and fields[1] == email:
-                lending_count += 1
-    if lending_count >= 3:
-        messagebox.showerror("Error", "You have already borrowed three books. Please return one to continue.")
-        return
+    print("book_title")
 
     # update book availability file
     book_availability = {}
     with open('book_availability.txt', 'r') as f:
         for line in f:
-            code_, available = line.strip().split(',')
-            book_availability[code_] = available
+            code, available = line.strip().split(',')
+            book_availability[code] = available
     book_availability[code] = 'no'
     with open('book_availability.txt', 'w') as f:
-        for code_, available in book_availability.items():
-            f.write(f"{code_},{available}\n")
+        for code, available in book_availability.items():
+            f.write(f"{code},{available}\n")
 
     # store inputs, book title, and timestamp in a text file
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -156,12 +146,12 @@ main_frame = ttk.Frame(root, padding=20)
 main_frame.pack(fill=tk.BOTH, expand=True)
 
 # create entry fields
-name_label = ttk.Label(main_frame, text="Name", foreground='white', background='black', font=("Helvetica", 14))
+name_label = ttk.Label(main_frame, text="name", foreground='white', background='black', font=("Helvetica", 14))
 name_label.pack()
 name_entry = ttk.Entry(main_frame, font=("Helvetica", 14))
 name_entry.pack()
 
-email_label = ttk.Label(main_frame, text="Email", foreground='white', background='black', font=("Helvetica", 14))
+email_label = ttk.Label(main_frame, text="email", foreground='white', background='black', font=("Helvetica", 14))
 email_label.pack()
 email_entry = ttk.Entry(main_frame, font=("Helvetica", 14))
 email_entry.pack()
