@@ -13,6 +13,7 @@ def lend_book():
     name = name_entry.get()
     email = email_entry.get()
     code = code_entry.get()
+    code_new = code_entry.get()
 
     # check if inputs are valid
     if not name:
@@ -40,22 +41,21 @@ def lend_book():
     book_index = {}
     with open('book_index.txt', 'r') as f:
         for line in f:
-            code_, title = line.strip().split(',')
-            book_index[code_] = title
+            icode, title = line.strip().split(',')
+            book_index[icode] = title
 
     # get the book title from the index file
     if code not in book_index:
         messagebox.showerror("Error", "Invalid Code")
         return
     book_title = book_index[code]
-    print("book_title")
-
+    
     # update book availability file
     book_availability = {}
     with open('book_availability.txt', 'r') as f:
         for line in f:
-            code, available = line.strip().split(',')
-            book_availability[code] = available
+            icode, available = line.strip().split(',')
+            book_availability[icode] = available
     book_availability[code] = 'no'
     with open('book_availability.txt', 'w') as f:
         for code, available in book_availability.items():
@@ -64,7 +64,7 @@ def lend_book():
     # store inputs, book title, and timestamp in a text file
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open('lending.txt', 'a') as f:
-        f.write(f"{name},{email},{code},{book_title},{timestamp}\n")
+        f.write(f"{name},{email},{code_new},{book_title},{timestamp}\n")
     messagebox.showinfo("Success", "Book lent successfully")
 
     # log the lending action to a file
@@ -76,6 +76,7 @@ def return_book():
     name = name_entry.get()
     email = email_entry.get()
     code = code_entry.get()
+    code_new = code_entry.get()
 
     # check if inputs are valid
     if not name:
@@ -107,8 +108,8 @@ def return_book():
     book_availability = {}
     with open('book_availability.txt', 'r') as f:
         for line in f.readlines():
-            code, available = line.strip().split(',')
-            book_availability[code] = available
+            icode, available = line.strip().split(',')
+            book_availability[icode] = available
     book_availability[code] = 'yes'
     with open('book_availability.txt', 'w') as f:
         for code, available in book_availability.items():
@@ -118,8 +119,9 @@ def return_book():
     book_index = {}
     with open('book_index.txt', 'r') as f:
         for line in f:
-            code, title = line.strip().split(',')
-            book_title = book_index[code]
+            icode, title = line.strip().split(',')
+            book_index[icode] = title
+    book_title = book_index[code_new]
 
     # log the Returning action to a file
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
