@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>CWHS Library Files</title>
+    <title>Book Website</title>
 </head>
 <body>
-    <h1>CWHS Library Files</h1>
+    <h1>Book Website</h1>
+    <p>Instructions:</p>
     <ul>
-        {% for file in files %}
-        <li><a href="/files/{{ file.filename }}">{{ file.name }}</a></li>
-        {% endfor %}
+        <li>Search by title to find the corresponding book code.</li>
+        <li>Search by code to find lending information (if available).</li>
     </ul>
+    <hr>
+
+    <h2>Search by Title</h2>
+    <form action="/" method="GET">
+        <label for="title-search">Title:</label>
+        <input type="text" name="search" id="title-search" placeholder="Enter book title">
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Search Results by Title:</h3>
+    {% if search_results %}
+        <ul>
+            {% for book in search_results %}
+                <li>Title: {{ book['title'] }}, Code: {{ book['code'] }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching titles found.</p>
+    {% endif %}
+
+    <hr>
+
+    <h2>Search by Code</h2>
+    <form action="/" method="GET">
+        <label for="code-search">Code:</label>
+        <input type="text" name="search" id="code-search" placeholder="Enter book code">
+        <input type="submit" value="Search">
+    </form>
+
+    <h3>Lending Information:</h3>
+    {% if search_results_index %}
+        <ul>
+            {% for book in search_results_index %}
+                <li>Title: {{ book['book_title'] }}</li>
+                {% if book['status'] == 'Lent' %}
+                    <ul>
+                        <li>Availability: This book is currently not available.</li>
+                        <li>Name: {{ book['name'] }}</li>
+                        <li>Email: {{ book['email'] }}</li>
+                        <li>Timestamp: {{ book['timestamp'] }}</li>
+                    </ul>
+                {% else %}
+                    <li>Availability: This book is currently available.</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% else %}
+        {% if search_query and search_query.isnumeric() %}
+            <p>No lending information found for the given code.</p>
+        {% else %}
+            <p>Invalid code. Please enter a valid book code.</p>
+        {% endif %}
+    {% endif %}
 </body>
 </html>
