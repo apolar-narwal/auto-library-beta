@@ -17,7 +17,7 @@ def home():
 # Route to serve text files
 @app.route('/files/<path:filename>')
 def serve_file(filename):
-    return send_from_directory('LibraryManagerGit', filename)
+    return send_from_directory('librarycode', filename)
 
 if __name__ == '__main__':
     app.run()
