@@ -1,5 +1,3 @@
-import re
-
 book_list_file = "book_list_pretty.txt"
 book_index_file = "book_index.txt"
 book_availability_file = "book_availability.txt"
