@@ -1,0 +1,136 @@
+Code: 1 | Title: A People’s History of the United States | ISBN: 9780060836652
+Code: 2 | Title: The War on Normal People: The Truth About America's Disappearing Jobs and Why Universal Basic Income Is Our Future | ISBN: 9780316414210
+Code: 3 | Title: Race matters | ISBN: 9780679749868
+Code: 4 | Title: The Harlem Renaissance | ISBN: 9780679758891
+Code: 5 | Title: Wordy Shipmates | ISBN: 9781594484001
+Code: 6 | Title: The Lost | ISBN: 9780060542979
+Code: 7 | Title: The Devil in the White City | ISBN: 9780375725609
+Code: 8 | Title: Tightrope | ISBN: 9780525564171
+Code: 9 | Title: There are No Children Here | ISBN: 9789914106121
+Code: 10 | Title: How to Be an Antiracist | ISBN: 9780525509288
+Code: 11 | Title: Stamped | ISBN: 9780316453691
+Code: 12 | Title: Ghosts in the Schoolyard | ISBN: 9780226526164
+Code: 13 | Title: An Indigenous Peoples' History of the United States (ReVisioning American History) | ISBN: 9780807057834
+Code: 14 | Title: The Souls of Black Folk (Barnes & Noble Classics Series) (Barnes & Noble Classics) | ISBN: 9781593081713
+Code: 15 | Title: Bury My Heart at Wounded Knee | ISBN: 9780805017304
+Code: 16 | Title: D Day: June 6, 1944 | ISBN: 9780684801377
+Code: 17 | Title: The New Jim Crow | ISBN: 9781620971932
+Code: 18 | Title: The New Jim Crow | ISBN: 9781620971932
+Code: 19 | Title: The Constitution of the United States | ISBN: 9798693882423
+Code: 20 | Title: The first three minutes | ISBN: 9780465024377
+Code: 21 | Title: Brief Welcome to the Universe | ISBN: 9780691219943
+Code: 22 | Title: The omnivore's dilemma | ISBN: 9780803735002
+Code: 23 | Title: How the Mind Works | ISBN: 9789913209922
+Code: 24 | Title: A Brief History of Time | ISBN: 9789914105933
+Code: 25 | Title: The Hidden Reality | ISBN: 9789914049114
+Code: 26 | Title: Relativity | ISBN: 9789913078757
+Code: 27 | Title: The Ancestor's Tale | ISBN: 9789913728508
+Code: 28 | Title: Beowulf 1 | ISBN: 9780393092257
+Code: 29 | Title: Beowulf 2 | ISBN: 9780393320978
+Code: 30 | Title: The song of Roland | ISBN: 9780486422404
+Code: 31 | Title: The Odyssey 1 | ISBN: 9780679728139
+Code: 32 | Title: The Odyssey 2 | ISBN: 9780393089059
+Code: 33 | Title: The Odyssey 3 | ISBN: 9780374525743
+Code: 34 | Title: The Iliad | ISBN: 9780385059411
+Code: 35 | Title: Tennyson's Poems | ISBN: Unknown
+Code: 36 | Title: Edgar Allan Poe | ISBN: 0894712330
+Code: 37 | Title: The  collected poems of Langston Hughes | ISBN: 9780679764083
+Code: 38 | Title: Inferno | ISBN: 9780451531391
+Code: 39 | Title: The Divine Comedy: Volume 1 | ISBN: 9780142437223
+Code: 40 | Title: Dante's Inferno | ISBN: 9780253209306
+Code: 41 | Title: Rifqa | ISBN: 9781642595864
+Code: 42 | Title: The Canterbury Tales | ISBN: Unknown
+Code: 43 | Title: The Complete Poetry & Prose of William Blake | ISBN: 0385152132
+Code: 44 | Title: The trial and death of Socrates | ISBN: 0486270661
+Code: 45 | Title: The symposium | ISBN: 0143037536
+Code: 46 | Title: Symposium and Phaedrus | ISBN: 0486277984
+Code: 47 | Title: the 5th wave | ISBN: 9780142425831
+Code: 48 | Title: Native Son (Perennial Classics) | ISBN: 9780060837563
+Code: 49 | Title: To the lighthouse | ISBN: 9780156030472
+Code: 50 | Title: Mrs. Dalloway | ISBN: 0156628635
+Code: 51 | Title: Picture of Dorian Gray and Other Stories (Classics) | ISBN: 0553210963
+Code: 52 | Title: The once and future king | ISBN: 9789913708517
+Code: 53 | Title: The House of Mirth (Barnes & Noble Classics) | ISBN: 0760719977
+Code: 54 | Title: The temple of my familiar | ISBN: 0151885338
+Code: 55 | Title: The Color Purple 1 | ISBN: 9780143135692
+Code: 56 | Title: The Color Purple 2 | ISBN: 0151191530
+Code: 57 | Title: The adventures of tom sawyer | ISBN: 9781788289627
+Code: 58 | Title: Personal recollections of joan of Ark | ISBN: Unknown
+Code: 59 | Title: The Gilded Age | ISBN: Unknown
+Code: 60 | Title: The American Claimant | ISBN: Unknown
+Code: 61 | Title: The Treasure of the Sierra Madre | ISBN: Unknown
+Code: 62 | Title: War and Peace | ISBN: 1566190274
+Code: 63 | Title: The Lord of the Rings | ISBN: 0618260242
+Code: 64 | Title: Burn down, Rise Up | ISBN: 9781728246000
+Code: 65 | Title: Hawthorne's Short Stories | ISBN: 0394700155
+Code: 66 | Title: Yaqui Delgado quiere darte una Paliza | ISBN: 9870763679408
+Code: 67 | Title: The Hottest State | ISBN: 0316540638
+Code: 68 | Title: Roots | ISBN: Unknown
+Code: 69 | Title: Tess of the D'Urbervilles (Signet Classics) | ISBN: 9780451530271
+Code: 70 | Title: Grimm's fairy tales | ISBN: 9781593080563
+Code: 71 | Title: Paper Towns | ISBN: 9780142414934
+Code: 72 | Title: Looking for Alaska | ISBN: 9780142402511
+Code: 73 | Title: The fault in our stars | ISBN: 9780525478812
+Code: 74 | Title: The Princess Bride | ISBN: 9780156035217
+Code: 75 | Title: Lord of the flies | ISBN: 0399501487
+Code: 76 | Title: Lord of the flies | ISBN: 9780399501487
+Code: 77 | Title: Grendel | ISBN: 0679723110
+Code: 78 | Title: Beautiful Redemption | ISBN: 9780316123563
+Code: 79 | Title: Beautiful Chaos | ISBN: 9780316123518
+Code: 80 | Title: Beautiful Darkness (Beautiful Creatures Series, Book 2) | ISBN: 9780316077040
+Code: 81 | Title: Norse Mythology | ISBN: 9780393356182
+Code: 82 | Title: The Graveyard Book | ISBN: 9780060530945
+Code: 83 | Title: Good Omens | ISBN: 9780060853983
+Code: 84 | Title: The Great Gatsby | ISBN: 068416325x
+Code: 85 | Title: The Great Gatsby 2 | ISBN: 0743273567
+Code: 86 | Title: The Great Gatsby | ISBN: 9780743273565
+Code: 87 | Title: Those who leave and those who stay | ISBN: 9781609452339
+Code: 88 | Title: The Story of a New Name | ISBN: 9781609451349
+Code: 89 | Title: My Brilliant Friend | ISBN: 9781609450786
+Code: 90 | Title: Sound & Fury V5 | ISBN: 0394700058
+Code: 91 | Title: As I lay dying | ISBN: 067973225x
+Code: 92 | Title: Coraline | ISBN: 9780380807345
+Code: 93 | Title: Parzival | ISBN: 9780394701882
+Code: 94 | Title: How We Are Hungry | ISBN: 1400095565
+Code: 95 | Title: Rebecca | ISBN: 9780380730407
+Code: 96 | Title: Sister Carrie | ISBN: 9780593314883
+Code: 97 | Title: The Memoirs of Sherlock Holmes | ISBN: Unknown
+Code: 98 | Title: The Adventures of Sherlock Holmes | ISBN: 9781607105565
+Code: 99 | Title: A Tale of Two Cities | ISBN: 0140430547
+Code: 100 | Title: A Tale of Two Cities 2 | ISBN: 9781509848997
+Code: 101 | Title: The Queen of Katwe | ISBN: 9781501127182
+Code: 102 | Title: Mockingjay | ISBN: 9780439023511
+Code: 103 | Title: Mockingjay 2 | ISBN: 9780545663267
+Code: 104 | Title: Catching Fire | ISBN: 0439023491
+Code: 105 | Title: The Hunger Games | ISBN: 0439023521
+Code: 106 | Title: The Hunger Games 2 | ISBN: 9780439023528
+Code: 107 | Title: Jonathan Strange and Mr Norrell | ISBN: 9781635576726
+Code: 108 | Title: The Awakening | ISBN: 9789912057807
+Code: 109 | Title: The Perks of Being a Wallflower | ISBN: 0671027344
+Code: 110 | Title: The Bloody Chamber: And Other Stories: 75th-Anniversary Edition (Penguin Classics Deluxe Edition) | ISBN: 9780143107613
+Code: 111 | Title: Parable of the Talents | ISBN: 9781538732199
+Code: 112 | Title: Parable of the Sower | ISBN: 9781538732182
+Code: 113 | Title: Imago | ISBN: 9781538753736
+Code: 114 | Title: Adulthood Rites | ISBN: 9781538753729
+Code: 115 | Title: Dawn | ISBN: 9781538753712
+Code: 116 | Title: Kindred | ISBN: 9780807083697
+Code: 117 | Title: Wuthering Heights | ISBN: 0880299185
+Code: 118 | Title: Charlotte Bronte | ISBN: 9780141441446
+Code: 119 | Title: Firekeeper's Daughter | ISBN: 9781250766564
+Code: 120 | Title: Sense and Sensibility | ISBN: Unknown
+Code: 121 | Title: Pride and Prejudice | ISBN: 1593082010
+Code: 122 | Title: Mansfield Park (Signet Classics) | ISBN: 0451526295
+Code: 123 | Title: Emma | ISBN: 1895775824
+Code: 124 | Title: The Handmaid's Tale | ISBN: 9780385490818
+Code: 125 | Title: Thirteen Reasons Why | ISBN: 9781595141880
+Code: 126 | Title: I Know Why the Caged Bird Sings | ISBN: 0553279378
+Code: 127 | Title: Once Upon a Quinceanera | ISBN: 0670038733
+Code: 128 | Title: Antes de Ser Libres (Before We Were Free Spanish Edition) | ISBN: 9780525579779
+Code: 129 | Title: The house of the spirits | ISBN: 0394539079
+Code: 130 | Title: Love from A to Z | ISBN: 9781534442726
+Code: 131 | Title: Love, Hate, and other filters | ISBN: 97816161958473
+Code: 132 | Title: Internment | ISBN: 9780316522694
+Code: 133 | Title: Righteous | ISBN: 9781984812612
+Code: 134 | Title: The Hitchhiker's Guide to the Galaxy | ISBN: 9780345418913
+Code: 135 | Title: Things Fall Apart | ISBN: 0385474547
+Code: 136 | Title: The Poet X | ISBN: 9780062662804
