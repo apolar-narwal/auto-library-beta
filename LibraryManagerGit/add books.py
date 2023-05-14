@@ -11,8 +11,8 @@ book_list_file = "book_list_pretty.txt"
 while True:
     # Get book details from user
     isbn = input("Enter the ISBN of the book (or 'q' to quit): ")
-    
-    new_code = input("Enter the code you wish to assign: ") 
+
+    new_code = input("Enter the code you wish to assign: ")
 
     if isbn.lower() == 'exit':
         break

@@ -1,0 +1,136 @@
+1,A People’s History of the United States
+2,The War on Normal People
+3,Race matters
+4,The Harlem Renaissance
+5,Wordy Shipmates
+6,The Lost
+7,The Devil in the White City
+8,Tightrope
+9,There are No Children Here
+10,How to Be an Antiracist
+11,Stamped
+12,Ghosts in the Schoolyard
+13,An Indigenous Peoples' History of the United States (ReVisioning American History)
+14,The Souls of Black Folk (Barnes & Noble Classics Series) (Barnes & Noble Classics)
+15,Bury My Heart at Wounded Knee
+16,D Day
+17,The New Jim Crow
+18,The New Jim Crow
+19,The Constitution of the United States
+20,The first three minutes
+21,Brief Welcome to the Universe
+22,The omnivore's dilemma
+23,How the Mind Works
+24,A Brief History of Time
+25,The Hidden Reality
+26,Relativity
+27,The Ancestor's Tale
+28,Beowulf 1
+29,Beowulf 2
+30,The song of Roland
+31,The Odyssey 1
+32,The Odyssey 2
+33,The Odyssey 3
+34,The Iliad
+35,Tennyson's Poems
+36,Edgar Allan Poe
+37,The  collected poems of Langston Hughes
+38,Inferno
+39,The Divine Comedy
+40,Dante's Inferno
+41,Rifqa
+42,The Canterbury Tales
+43,The Complete Poetry & Prose of William Blake
+44,The trial and death of Socrates
+45,The symposium
+46,Symposium and Phaedrus
+47,the 5th wave
+48,Native Son (Perennial Classics)
+49,To the lighthouse
+50,Mrs. Dalloway
+51,Picture of Dorian Gray and Other Stories (Classics)
+52,The once and future king
+53,The House of Mirth (Barnes & Noble Classics)
+54,The temple of my familiar
+55,The Color Purple 1
+56,The Color Purple 2
+57,The adventures of tom sawyer
+58,Personal recollections of joan of Ark
+59,The Gilded Age
+60,The American Claimant
+61,The Treasure of the Sierra Madre
+62,War and Peace
+63,The Lord of the Rings
+64,Burn down, Rise Up
+65,Hawthorne's Short Stories
+66,Yaqui Delgado quiere darte una Paliza
+67,The Hottest State
+68,Roots
+69,Tess of the D'Urbervilles (Signet Classics)
+70,Grimm's fairy tales
+71,Paper Towns
+72,Looking for Alaska
+73,The fault in our stars
+74,The Princess Bride
+75,Lord of the flies
+76,Lord of the flies
+77,Grendel
+78,Beautiful Redemption
+79,Beautiful Chaos
+80,Beautiful Darkness (Beautiful Creatures Series, Book 2)
+81,Norse Mythology
+82,The Graveyard Book
+83,Good Omens
+84,The Great Gatsby
+85,The Great Gatsby 2
+86,The Great Gatsby
+87,Those who leave and those who stay
+88,The Story of a New Name
+89,My Brilliant Friend
+90,Sound & Fury V5
+91,As I lay dying
+92,Coraline
+93,Parzival
+94,How We Are Hungry
+95,Rebecca
+96,Sister Carrie
+97,The Memoirs of Sherlock Holmes
+98,The Adventures of Sherlock Holmes
+99,A Tale of Two Cities
+100,A Tale of Two Cities 2
+101,The Queen of Katwe
+102,Mockingjay
+103,Mockingjay 2
+104,Catching Fire
+105,The Hunger Games
+106,The Hunger Games 2
+107,Jonathan Strange and Mr Norrell
+108,The Awakening
+109,The Perks of Being a Wallflower
+110,The Bloody Chamber
+111,Parable of the Talents
+112,Parable of the Sower
+113,Imago
+114,Adulthood Rites
+115,Dawn
+116,Kindred
+117,Wuthering Heights
+118,Charlotte Bronte
+119,Firekeeper's Daughter
+120,Sense and Sensibility
+121,Pride and Prejudice
+122,Mansfield Park (Signet Classics)
+123,Emma
+124,The Handmaid's Tale
+125,Thirteen Reasons Why
+126,I Know Why the Caged Bird Sings
+127,Once Upon a Quinceanera
+128,Antes de Ser Libres (Before We Were Free Spanish Edition)
+129,The house of the spirits
+130,Love from A to Z
+131,Love, Hate, and other filters
+132,Internment
+133,Righteous
+134,The Hitchhiker's Guide to the Galaxy
+135,Things Fall Apart
+136,The Poet X
