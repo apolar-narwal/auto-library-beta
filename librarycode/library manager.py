@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from tkinter import ttk
+from ttkthemes import ThemedStyle
 
 def lend_book():
     # get inputs from GUI
@@ -41,7 +42,7 @@ def lend_book():
     book_index = {}
     with open('book_index.txt', 'r') as f:
         for line in f:
-            icode, title = line.strip().split(',')
+            icode, title = line.strip().split(',',1)
             book_index[icode] = title
 
     # get the book title from the index file
@@ -49,7 +50,7 @@ def lend_book():
         messagebox.showerror("Error", "Invalid Code")
         return
     book_title = book_index[code]
-    
+
     # update book availability file
     book_availability = {}
     with open('book_availability.txt', 'r') as f:
@@ -119,9 +120,11 @@ def return_book():
     book_index = {}
     with open('book_index.txt', 'r') as f:
         for line in f:
-            icode, title = line.strip().split(',')
+            icode, title = line.strip().split(',',1)
             book_index[icode] = title
     book_title = book_index[code_new]
+
+    print(book_title)
 
     # log the Returning action to a file
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -137,45 +140,45 @@ def return_book():
     due_date = datetime.datetime.now() + datetime.timedelta(days=14)
     scheduler.add_job(send_overdue_email, "date", run_date=due_date, args=[name, email, code])
 
-# create GUI
+
+# Create GUI
 root = tk.Tk()
 root.title("Library Lending System")
-root.geometry('1920x1080')
-root.configure(bg='black')
+root.attributes("-fullscreen", True)  # Set the window to full-screen
 
-# create main frame
-main_frame = ttk.Frame(root, padding=20)
+# Set the theme to 'breeze'
+style = ThemedStyle(root)
+style.set_theme("breeze")
+
+# Create main frame
+main_frame = ttk.Frame(root, padding=50)
 main_frame.pack(fill=tk.BOTH, expand=True)
 
-# create entry fields
-name_label = ttk.Label(main_frame, text="name", foreground='white', background='black', font=("Helvetica", 14))
+# Create entry fields
+name_label = ttk.Label(main_frame, text="Name")
 name_label.pack()
-name_entry = ttk.Entry(main_frame, font=("Helvetica", 14))
-name_entry.pack()
+name_entry = ttk.Entry(main_frame, font=("Helvetica", 16), width=30)
+name_entry.pack(pady=10)
 
-email_label = ttk.Label(main_frame, text="email", foreground='white', background='black', font=("Helvetica", 14))
+email_label = ttk.Label(main_frame, text="Email")
 email_label.pack()
-email_entry = ttk.Entry(main_frame, font=("Helvetica", 14))
-email_entry.pack()
+email_entry = ttk.Entry(main_frame, font=("Helvetica", 16), width=30)
+email_entry.pack(pady=10)
 
-code_label = ttk.Label(main_frame, text="code", foreground='white', background='black', font=("Helvetica", 14))
+code_label = ttk.Label(main_frame, text="Code")
 code_label.pack()
-code_entry = ttk.Entry(main_frame, font=("Helvetica", 14))
-code_entry.pack()
+code_entry = ttk.Entry(main_frame, font=("Helvetica", 16), width=30)
+code_entry.pack(pady=10)
 
-# create lend button
-lend_button = ttk.Button(main_frame, text="Lend Book", command=lend_book, style='DarkButton.TButton')
-lend_button.pack()
+# Create lend button
+lend_button = ttk.Button(main_frame, text="Lend Book", command=lend_book)
+lend_button.pack(pady=20)
 
-# create return button
-return_button = ttk.Button(main_frame, text="Return Book", command=return_book, style='DarkButton.TButton')
-return_button.pack()
+# Create return button
+return_button = ttk.Button(main_frame, text="Return Book", command=return_book)
+return_button.pack(pady=10)
 
-# create custom style for button
-s = ttk.Style()
-s.configure('DarkButton.TButton', foreground='white', background='black', font=("Helvetica", 14))
-
-# run GUI
+# Run GUI
 root.mainloop()
 
 def send_email(to, subject, body, attachment=None):
