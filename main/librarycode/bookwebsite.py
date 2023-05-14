@@ -12,12 +12,14 @@ text_files = [
 # Route for the home page
 @app.route('/')
 def home():
-    return render_template('bookwebsite.html', files=text_files)
+    # Get a list of text files in the current directory
+    files = [f for f in os.listdir('.') if os.path.isfile(f) and f.endswith('.txt')]
+    return render_template('index.html', files=files)
 
 # Route to serve text files
 @app.route('/files/<path:filename>')
 def serve_file(filename):
-    return send_from_directory('librarycode', filename)
+    return send_from_directory('.', filename)
 
 if __name__ == '__main__':
     app.run()
