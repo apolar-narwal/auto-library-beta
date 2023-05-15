@@ -12,14 +12,18 @@ availability_file = 'book_availability.txt'
 lending_data = {}
 with open(lending_file, 'r') as f:
     for line in f:
-        name, email, code, book_title, timestamp = line.strip().split(',',1)
-        lending_data[code] = {
-            'name': name,
-            'email': email,
-            'code': code,
-            'book_title': book_title,
-            'timestamp': timestamp
-        }
+        data = line.strip().split(',', 1)
+        if len(data) >= 5:
+            name, email, code, book_title, timestamp = data
+            lending_data[book_title] = {
+                'name': name,
+                'email': email,
+                'book_title': book_title,
+                'timestamp': timestamp
+            }
+        else:
+            # Handle the case where the line does not have enough values
+            print(f"Invalid line: {line}")
 
 # Read the index file and create a dictionary to map titles to codes
 book_index = {}

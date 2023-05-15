@@ -7,32 +7,13 @@
     <h1>Book Website</h1>
     <p>Instructions:</p>
     <ul>
-        <li>Search by title to find the corresponding book code.</li>
-        <li>Search by code to find lending information (if available).</li>
+        <li>Search by title to find information (if available).</li>
     </ul>
     <hr>
 
-    <h2>Search by Title</h2>
-    <form action="/" method="GET">
-        <label for="title-search">Title:</label>
-        <input type="text" name="search" id="title-search" placeholder="Enter book title">
-        <input type="submit" value="Search">
-    </form>
-
-    <h3>Search Results by Title:</h3>
-    {% if search_results %}
-        <ul>
-            {% for book in search_results %}
-                <li>Title: {{ book['title'] }}, Code: {{ book['code'] }}</li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No matching titles found.</p>
-    {% endif %}
-
     <hr>
 
-    <h2>Search by Code</h2>
+    <h2>Search by Title</h2>
     <form action="/" method="GET">
         <label for="code-search">Code:</label>
         <input type="text" name="search" id="code-search" placeholder="Enter book code">
@@ -60,7 +41,7 @@
         {% if search_query and search_query.isnumeric() %}
             <p>No lending information found for the given code.</p>
         {% else %}
-            <p>Invalid code. Please enter a valid book code.</p>
+            <p>Invalid keyword.</p>
         {% endif %}
     {% endif %}
 </body>
