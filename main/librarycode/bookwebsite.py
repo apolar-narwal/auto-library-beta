@@ -12,7 +12,7 @@ availability_file = 'book_availability.txt'
 lending_data = {}
 with open(lending_file, 'r') as f:
     for line in f:
-        data = line.strip().split(',', 1)
+        data = line.strip().split(',')
         if len(data) >= 5:
             name, email, code, book_title, timestamp = data
             lending_data[book_title] = {
@@ -65,10 +65,10 @@ def home():
 
     if search_query:
         if search_query.isdigit():
-            book = next((book for book in books if book['code'] == search_query), None)
+            book = next((book for book in books if book['title'] == search_query), None)
             if book:
-                if book['code'] in lending_data:
-                    lending_info = lending_data[book['code']]
+                if book['title'] in lending_data:
+                    lending_info = lending_data[book['title']]
                     search_results_index.append({
                         'book_title': book['title'],
                         'status': 'Lent',

@@ -33,7 +33,7 @@ def lend_book():
     # check if lending already exists
     with open('lending.txt', 'r') as f:
         for line in f:
-            fields = line.strip().split(',')
+            fields = line.strip().split(',',1)
             if len(fields) > 1 and fields[3] == code:
                 messagebox.showerror("Error", "This lending already exists")
                 return

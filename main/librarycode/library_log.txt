@@ -5,3 +5,11 @@ RETURNED: Name: a | Email: @ | Title: A People’s History of the United States 
 LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 17:08:31
 LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:12:31
 RETURNED: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:12:57
+LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:18:39
+RETURNED: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:30:44
+LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:30:45
+LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:30:46
+RETURNED: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:30:48
+LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:30:49
+RETURNED: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:33:52
+LENT: Name: a | Email: @ | Title: Beowulf 1 | Time: 2023-05-14 22:33:53
