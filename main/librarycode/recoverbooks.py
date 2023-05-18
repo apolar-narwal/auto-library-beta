@@ -2,6 +2,8 @@ book_list_file = "book_list_pretty.txt"
 book_index_file = "book_index.txt"
 book_availability_file = "book_availability.txt"
 
+# writes index and availability files with contents of book_list_pretty 
+
 # Open the book list file
 with open(book_list_file, 'r') as f:
     lines = f.readlines()
@@ -23,5 +25,6 @@ for line in lines:
         with open(book_availability_file, 'a') as availability_file:
             availability_file.write(f"{code},{availability}\n")
 
-        # Print the extracted data (optional)
+        # print the extracted data 
         print(f"Code: {code} | Title: {title} | ISBN: {isbn}")
+        print("success")
