@@ -185,8 +185,8 @@ def send_email(to, subject, body, attachment=None):
     # configure SMTP server
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    smtp_username = "your_email@gmail.com"
-    smtp_password = "your_email_password"
+    smtp_username = "chicagowaldorflibrary@gmail.com"
+    smtp_password = "Student@CWS"
     smtp_connection = smtplib.SMTP(smtp_server, smtp_port)
     smtp_connection.ehlo()
     smtp_connection.starttls()
@@ -209,12 +209,22 @@ def send_email(to, subject, body, attachment=None):
     smtp_connection.quit()
 
 def send_overdue_email(name, email, code):
-    # check if book is still lent
-    with open('lending.txt', 'r') as f:
-        lendings = f.read().splitlines()
-    lending = f"{name},{email},{code}"
-    if lending not in lendings:
-        return
+
+    lending_data = {}	
+    with open('lending.txt', 'r') as f:	
+        for line in f:	
+            data = line.strip().split(',')	
+        if len(data) >= 5:	
+            name, email, code, book_title, timestamp = data	
+            lending_data[book_title] = {	
+                'name': name,	
+                'email': email,	
+                'book_title': book_title,	
+                'timestamp': timestamp	
+            }	
+        else:	
+            # Handle the case where the line does not have enough values	
+            print(f"Invalid line: {line}")
 
     # load the book index file
     book_index = {}
@@ -227,7 +237,9 @@ def send_overdue_email(name, email, code):
     subject = f"Reminder: Book {book_title} is overdue"
     body = f"Dear {name},\n\nPlease return the book {book_title} as soon as possible.\n\nBest regards,\nThe CWS Library"
     send_email(to=email, subject=subject, body=body)
-    send_email(to="admin_email@gmail.com", subject=subject, body=body)
+    send_email(to="chicagowaldorflibrary@gmail.com", subject=subject, body=body)
 
     # schedule next overdue reminder
     scheduler.add_job(send_overdue_email, "interval", days=1, args=[name, email, code])
+
+send_overdue_email()
