@@ -35,7 +35,7 @@ def lend_book():
         for line in f:
             fields = line.strip().split(',',1)
             if len(fields) > 1 and fields[3] == code:
-                messagebox.showerror("Error", "This lending already exists")
+                messagebox.showerror("Error", "This book has already been lent")
                 return
 
     # load the book index file
@@ -66,7 +66,7 @@ def lend_book():
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open('lending.txt', 'a') as f:
         f.write(f"{name},{email},{code_new},{book_title},{timestamp}\n")
-    messagebox.showinfo("Success", "Book lent successfully")
+    messagebox.showinfo("Success", "Book lent successfully for two weeks")
 
     # log the lending action to a file
     with open('library_log.txt', 'a') as f:
@@ -101,7 +101,7 @@ def return_book():
             else:
                 f.write(line)
         if not lending_removed:
-            messagebox.showerror("Error", "This lending does not exist")
+            messagebox.showerror("Error", "This book has not been lent")
             return
     messagebox.showinfo("Success", "Book returned successfully")
 
@@ -209,22 +209,12 @@ def send_email(to, subject, body, attachment=None):
     smtp_connection.quit()
 
 def send_overdue_email(name, email, code):
-
-    lending_data = {}	
-    with open('lending.txt', 'r') as f:	
-        for line in f:	
-            data = line.strip().split(',')	
-        if len(data) >= 5:	
-            name, email, code, book_title, timestamp = data	
-            lending_data[book_title] = {	
-                'name': name,	
-                'email': email,	
-                'book_title': book_title,	
-                'timestamp': timestamp	
-            }	
-        else:	
-            # Handle the case where the line does not have enough values	
-            print(f"Invalid line: {line}")
+    # check if book is still lent
+    with open('lending.txt', 'r') as f:
+        lendings = f.read().splitlines()
+    lending = f"{name},{email},{code}"
+    if lending not in lendings:
+        return
 
     # load the book index file
     book_index = {}
@@ -235,11 +225,9 @@ def send_overdue_email(name, email, code):
 
     # send overdue reminder email
     subject = f"Reminder: Book {book_title} is overdue"
-    body = f"Dear {name},\n\nPlease return the book {book_title} as soon as possible.\n\nBest regards,\nThe CWS Library"
+    body = f"Dear {name},\n\nPlease return the book {book_title} as soon as possible. You are past the checkout limit of two weeks.\n\nBest regards,\nThe CWS Library"
     send_email(to=email, subject=subject, body=body)
-    send_email(to="chicagowaldorflibrary@gmail.com", subject=subject, body=body)
+    send_email(to="admin_email@gmail.com", subject=subject, body=body)
 
     # schedule next overdue reminder
     scheduler.add_job(send_overdue_email, "interval", days=1, args=[name, email, code])
-
-send_overdue_email()
